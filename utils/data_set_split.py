@@ -34,6 +34,7 @@ def train_val_split(args):
     for i in tqdm(range(len(all_paths))):
         path = all_paths[i]
         class_name = path.split('/')[-2]
+        class_name=class_name.strip().replace(' ','_')
         if i%val_amount==0:
             class_dir = os.path.join(val_dir, class_name)
             if not os.path.isdir(class_dir):
