@@ -8,8 +8,6 @@ parser = argparse.ArgumentParser(description='Detect and align face')
 parser.add_argument('--data_set', default='/home/milton/PycharmProjects/facelock_app/facenet_mtcnn_to_mobile/custom_faces', type=str,help='Dataset Path, each class must in its own dir')
 parser.add_argument('--output',default='/home/milton/PycharmProjects/facelock_app/facenet_mtcnn_to_mobile/custom_face_aligned', type=str,help='Out save dir')
 
-
-
 if __name__=="__main__":
     args = parser.parse_args()
     data_set=args.data_set
